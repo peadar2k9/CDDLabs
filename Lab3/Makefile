@@ -1,3 +1,5 @@
+# Peter Cronin - C00210495
+
 CC=g++
 CFLAGS= -std=c++11 -pthread
 DEBUGFLAGS= -g -std=c++11 -pthread
