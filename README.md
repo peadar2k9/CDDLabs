@@ -1,2 +1,2 @@
 # CDDLabs
-Labs by Peter Cronin for Distriuted and Concurrent Device Development.
+Labs by Peter Cronin for Distributed and Concurrent Device Development.
