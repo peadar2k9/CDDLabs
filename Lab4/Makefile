@@ -9,7 +9,7 @@ build: $(FILES)
 	$(CC) -o $(OUT_EXE) $(FILES) $(CFLAGS)
 
 DEBUG: DEBUGFLAGS = -g -O0
-	DEBUG: ALL
+	DEBUG: build
 
 clean:
 	rm *.o

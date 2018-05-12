@@ -2,8 +2,11 @@
 
 CC=g++
 CFLAGS= -std=c++11 -pthread
-FILES= signal.cpp Semaphore.cpp
-OUT_EXE=signal
+CFILES= signal.cpp Semaphore.cpp
+HFILES=Semaphore.h
+EXE=signal.exe
 
-build: $(FILES)
-	$(CC) -o $(OUT_EXE) $(FILES) $(CFLAGS)
+ALL: $(CFILES) $(HFILES)
+	$(CC) -o $(EXE) $(CFILES) $(CFLAGS)
+CLEAN:
+	rm *.o

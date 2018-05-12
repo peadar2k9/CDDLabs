@@ -1,12 +1,3 @@
-/*! 
-\author Peter Cronin
-\date 12/10/2017
-\email peadarcronin1@gmail.com
-\file signal.cpp
-\brief Semaphore class
-\license GNU (General Public License)
-*/
-
 #include "Semaphore.h"
 /*! \class Semaphore
     \brief A Semaphore Implementation
