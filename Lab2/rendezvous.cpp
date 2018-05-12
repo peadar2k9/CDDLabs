@@ -32,10 +32,10 @@ void startVector(std::vector<std::thread> &threads, std::shared_ptr<Semaphore> a
     for (int i = 0; i < size; i++){
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
         if (i < 5){
-            std::thread current_thread = std::thread(firstThreadTask, aArrived, bArrived, i);
+            std::thread current_thread = std::thread(taskOne, aArrived, bArrived, i);
             threads.push_back(move(current_thread));
         }else{
-            std::thread current_thread = std::thread(secondThreadTask, aArrived, bArrived, i);
+            std::thread current_thread = std::thread(taskTwo, aArrived, bArrived, i);
             threads.push_back(move(current_thread));
         }
     }
