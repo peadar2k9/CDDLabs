@@ -18,7 +18,7 @@ void taskOne(std::shared_ptr<Semaphore> aArrived, std::shared_ptr<Semaphore> bAr
   std::cout <<"Thread " + std::to_string(threadNum) + " arrived & waiting" << std::endl;  
   aArrived->Wait();
   std::cout << "Thread " + std::to_string(threadNum) + " released" <<std::endl;
-  Arrived->Signal();
+  bArrived->Signal();
 }
 
 void taskTwo(std::shared_ptr<Semaphore> aArrived, std::shared_ptr<Semaphore> bArrived, int threadNum){
