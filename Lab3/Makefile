@@ -1,15 +1,16 @@
 # Peter Cronin - C00210495
 
 CC=g++
-CFLAGS= -std=c++11 -pthread
-FILES= mutex.cpp Semaphore.cpp
-OUT_EXE=mutex
+CFLAGS = -std=c++11 -pthread
+CFILES = mutex.cpp Semaphore.cpp
+HFILES = Semaphore.h
+EXE = mutex
 
-build: $(FILES)
-	$(CC) -o $(OUT_EXE) $(FILES) $(CFLAGS)
+ALL: $(CFILES) $(HFILES)
+	$(CC) -o $(EXE) $(CFILES) $(CFLAGS)
 
 DEBUG: DEBUGFLAGS = -g -O0
-	DEBUG: ALL
+DEBUG: ALL
 
 clean:
 	rm *.o

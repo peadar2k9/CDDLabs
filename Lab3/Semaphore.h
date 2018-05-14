@@ -1,3 +1,11 @@
+/*! 
+\author Peter Cronin
+\date 13/10/2017
+\email peadarcronin1@gmail.com
+\file Semaphore.h
+\brief Semaphore header file
+\license GNU (General Public License)
+*/
 #include <mutex>
 #include <condition_variable>
 #include <chrono>

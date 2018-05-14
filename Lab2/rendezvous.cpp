@@ -2,8 +2,8 @@
 \author Peter Cronin
 \date 13/10/2017
 \email peadarcronin1@gmail.com
-\file Semaphore.cpp
-\brief Semaphore class
+\file rendezvous.cpp
+\brief Rendezvous implementation
 \license GNU (General Public License)
 */
 

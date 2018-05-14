@@ -1,3 +1,12 @@
+/*! 
+\author Peter Cronin
+\date 13/10/2017
+\email peadarcronin1@gmail.com
+\file Semaphore.cpp
+\brief Semaphore class
+\license GNU (General Public License)
+*/
+
 #include "Semaphore.h"
 /*! \class Semaphore
     \brief A Semaphore Implementation
