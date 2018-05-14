@@ -2,11 +2,11 @@
 
 CC=g++
 CFLAGS= -std=c++11 -pthread
-FILES= rendezvous.cpp Semaphore.cpp
-OUT_EXE=rendezvous
+CFILES= rendezvous.cpp Semaphore.cpp
+HFILES=Semaphore.h
+EXE=rendezvous
 
-build: $(FILES)
-	$(CC) -o $(OUT_EXE) $(FILES) $(CFLAGS)
-
-clean:
+ALL: $(CFILES) $(HFILES)
+	$(CC) -o $(EXE) $(CFILES) $(CFLAGS)
+CLEAN:
 	rm *.o
