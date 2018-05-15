@@ -1,4 +1,6 @@
-# Peter Cronin - C00210495
+#Author: Peter Cronin
+#Date: 06/11/2017
+#Makefile contains commands to compile project using "make"
 
 CC = g++
 CFLAGS = -std=c++11 -pthread
@@ -9,8 +11,10 @@ EXE = barrier
 ALL: $(CFILES) $(HFILES)
 	$(CC) -o $(EXE) $(CFILES) $(CFLAGS)
 
+#adds gdb debugging functionality
 DEBUG: DEBUGFLAGS = -g -O0 -Wall
 DEBUG: ALL
 
+#deletes all.o files (tidying up)
 clean:
 	rm *.o
