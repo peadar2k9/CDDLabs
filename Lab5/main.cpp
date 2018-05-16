@@ -23,10 +23,12 @@ std::map<char,int> characterNumber;
 */
 void Consumer(std::shared_ptr<SafeBuffer> buffer) {
     char removed;
-    removed = buffer->Remove();
-    characterNumber[removed]++;
-    std::cout << "Consumed : " << removed << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(std::rand()%1000));
+    while(removed != 'X'){
+        removed = buffer->Remove();
+        characterNumber[removed]++;
+        std::cout << "Consumed : " << removed << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(std::rand()%1000));
+    }  
 }
 
 /*!
