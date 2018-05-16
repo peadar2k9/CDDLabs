@@ -1,0 +1,4 @@
+PROJECT_NAME = "Lab 5"
+PROJECT_BRIEF = "Producer/Consumer"
+PROJECT_NUMBER = 1.0
+EXTRACT_ALL = YES
